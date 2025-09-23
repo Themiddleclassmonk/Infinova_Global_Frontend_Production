@@ -1,5 +1,6 @@
 import React from 'react'
-import EduventuresForStudentsNavbar from '../../components/EduventuresForStudentsNavbar'
+// import EduventuresForStudentsNavbar from '../../components/EduventuresForStudentsNavbar'
+import Navbar from '../../components/EduventuresForStudentsNavbarNew'
 import BookingFormForStudentsEduventures from '../../components/BookingFormForStudentsEduventures'
 import EduventuresForStudentsHeroSection from '../../components/EduventuresForStudentsHeroSection'
 import EduventuresTrainers from '../../components/EduventuresForStudentsTrainers'
@@ -13,7 +14,7 @@ import EduventuresCourses from './EduventuresCourses'
 const EduventuresForStudents = () => {
   return (
     <div>
-      <EduventuresForStudentsNavbar/>
+      <Navbar/>
       <EduventuresForStudentsHeroSection/>
       <BookingFormForStudentsEduventures/>
       <EduventuresForStudentsMAsterClassCard/>
