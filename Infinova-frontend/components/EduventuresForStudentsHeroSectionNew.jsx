@@ -3,30 +3,48 @@ import '../global.css';
 
 const EduventuresForStudentsHeroSection = () => {
   return (
-    <div className="education-banner">
-      <div className="banner-container">
-        {/* Left Content Section */}
-        <div className="content-section">
-          <div className="text-content">
-            <h1 className="main-heading font-extrabold leading-snug">
-              "Your Dream Career is One Skill Away, Join{' '}
-              <span className="highlight">Infinova Eduventures</span> Now!!"
+    <div
+      className="w-full"
+      style={{
+        background: 'linear-gradient(135deg, #e6f3ff 0%, #cce7ff 50%, #b3dbff 100%)',
+      }}
+    >
+      {/* You can change height of hero section from here  */}
+      {/* Hero Wrapper - Two Equal Parts */}
+      <div className="flex flex-col md:flex-row w-full h-auto md:h-[69vh]">
+        {/* Mobile-only spacing */}
+<div className="block md:hidden h-8"></div>
+        {/* Left Side (Text) */}
+        <div className="w-full md:w-1/2 flex items-center justify-center p-6 md:p-12">
+          <div className="text-center md:text-left space-y-3 md:space-y-4 lg:space-y-6">
+            
+            {/* Split lines */}
+            <h1 className="font-extrabold leading-snug text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-gray-900">
+              Your Dream Career is
             </h1>
-            <button className="contact-btn">
+            <h1 className="font-extrabold leading-snug text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-gray-900">
+              One Skill Away, Join
+            </h1>
+            <h1 className="font-extrabold leading-snug text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-gray-900">
+              <span className="text-blue-600">Infinova Eduventures</span>
+            </h1>
+            <h1 className="font-extrabold leading-snug text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4 text-gray-900">
+              Now!!!
+            </h1>
+            <div className="h-5"></div>
+            <button className="contact-btn lg:mt-3">
               Contact Us
             </button>
           </div>
         </div>
 
-        {/* Right Illustration Section */}
-        <div className="illustration-section">
-          <div className="image-container">
-            <img 
-              src='/student-heri-img.png'
-              alt="Student to Professional Transformation" 
-              className="character-image"
-            />
-          </div>
+        {/* Right Side (Image) */}
+        <div className="w-full md:w-1/2 flex items-center justify-center p-4">
+          <img 
+            src="/student-heri-img.png"
+            alt="Student to Professional Transformation"
+            className="w-full h-full object-contain"
+          />
         </div>
       </div>
     </div>

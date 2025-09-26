@@ -62,6 +62,7 @@ const Navbar = () => {
               Search
             </button>
           </form>
+          <div className="w-3"></div>
         </div>
 
         {/* Mobile search toggle */}
@@ -76,6 +77,7 @@ const Navbar = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
           </button>
+          <div className="w-3"></div>
         </div>
       </nav>
 
@@ -90,7 +92,7 @@ const Navbar = () => {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 aria-label="Mobile search"
-                className="flex-1 h-12 border border-gray-300 rounded-l-md text-base bg-white placeholder-gray-500 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 text-gray-900"
+                className="flex-1 h-12 border border-gray-300 text-base bg-white placeholder-gray-500 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 text-gray-900"
                 style={{
                   paddingLeft: '0.95rem',
                   paddingRight: '0.75rem',
@@ -100,7 +102,7 @@ const Navbar = () => {
 
               <button
                 type="submit"
-                className="bg-black text-white h-12 rounded-r-md hover:bg-gray-800 transition-colors duration-200 font-medium text-sm md:text-base mr-2"
+                className="bg-black text-white h-12 hover:bg-gray-800 transition-colors duration-200 font-medium text-sm md:text-base mr-2"
                 style={{
                   paddingLeft: '0.75rem',
                   paddingRight: '0.75rem',
